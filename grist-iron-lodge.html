@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lodge at Grist Iron | Burdett, NY – South East Seneca</title>
+  <meta name="description" content="The Lodge at Grist Iron Brewing — the only Finger Lakes lodging with an onsite microbrewery. Nine modern rooms and the 16-guest Farmhouse overlooking Seneca Lake in Burdett, NY, with an 18-hole disc golf course, a 6-acre dog park with its own bar, continental breakfast, and check-in beers." />
+  <meta property="og:title" content="The Lodge at Grist Iron | Burdett, NY" />
+  <meta property="og:description" content="The only Finger Lakes lodging with an onsite microbrewery — nine modern rooms plus the 16-guest Farmhouse on Seneca Lake, with disc golf, a dog park with its own bar, and beer just steps from your door." />
+  <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/63e01105bbabc6724dccfee7/16aa9fd6-369e-4d41-bb22-f91eed120ac0/thelodgeatgristiron.jpg?format=1500w" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root{--navy:#323d41;--amber:#eeaf70;--slate:#4e6d77;--mauve:#b37565;--white:#ffffff;--cream:#f7f4f0;--ink:#1e2729;--muted:#6b7c80;--border:#dde4e6;--font-head:'Oswald',sans-serif;--font-body:'Epilogue',sans-serif;--max-width:1100px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-height:1.7;}
+    .ses-icon{display:inline-flex;align-items:center;justify-content:center;background:var(--amber);border-radius:50%;flex-shrink:0;}
+    .ses-icon svg{display:block;} .ses-icon-sm{width:28px;height:28px;} .ses-icon-sm svg{width:15px;height:15px;} .ses-icon-md{width:38px;height:38px;} .ses-icon-md svg{width:20px;height:20px;}
+
+    /* HERO */
+    .hero{position:relative;height:620px;background:var(--navy) center/cover no-repeat;background-image:url('https://images.squarespace-cdn.com/content/v1/63e01105bbabc6724dccfee7/16aa9fd6-369e-4d41-bb22-f91eed120ac0/thelodgeatgristiron.jpg?format=1500w');background-position:center 45%;display:flex;align-items:flex-end;}
+    .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(50,61,65,0.92) 0%,rgba(50,61,65,0.2) 60%,transparent 100%);}
+    .hero-content{position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:0 2rem 3rem;width:100%;}
+    .category-tag{display:inline-flex;align-items:center;gap:0.5rem;background:var(--amber);color:var(--navy);font-family:var(--font-head);font-size:0.7rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;padding:0.3rem 0.85rem 0.3rem 0.5rem;border-radius:2px;margin-bottom:0.65rem;}
+    .category-tag .ses-icon{width:22px;height:22px;background:rgba(50,61,65,0.15);} .category-tag .ses-icon svg{width:12px;height:12px;}
+    .hero h1{font-family:var(--font-head);font-size:clamp(2.4rem,5.5vw,3.8rem);font-weight:700;color:var(--white);line-height:1.05;letter-spacing:0.02em;text-transform:uppercase;}
+    .hero-tagline{color:rgba(255,255,255,0.82);font-size:1.05rem;font-weight:300;font-style:italic;margin-top:0.5rem;max-width:640px;}
+    .hero-book-btn{display:inline-flex;align-items:center;gap:0.6rem;background:var(--amber);color:var(--navy);font-family:var(--font-head);font-weight:700;font-size:0.88rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.9rem 1.6rem;border-radius:4px;text-decoration:none;transition:background 0.2s;}
+    .hero-book-btn:hover{background:#e09e58;}
+
+    /* QUICK BAR */
+    .quick-bar{background:var(--navy);border-top:3px solid var(--amber);}
+    .quick-bar-inner{max-width:var(--max-width);margin:0 auto;padding:0 2rem;display:flex;flex-wrap:wrap;}
+    .quick-item{display:flex;align-items:center;gap:0.6rem;padding:0.9rem 1.5rem 0.9rem 0;margin-right:1.5rem;font-size:0.85rem;color:rgba(255,255,255,0.9);border-right:1px solid rgba(255,255,255,0.12);}
+    .quick-item:last-child{border-right:none;} .quick-item strong{font-weight:600;color:var(--white);}
+
+    /* BOOKING BANNER */
+    .book-banner{background:var(--slate);padding:1.25rem 2rem;}
+    .book-banner-inner{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+    .book-banner-text{color:var(--white);}
+    .book-banner-text strong{font-family:var(--font-head);font-size:1rem;letter-spacing:0.04em;text-transform:uppercase;display:block;}
+    .book-banner-text span{font-size:0.85rem;color:rgba(255,255,255,0.72);}
+    .book-banner-btns{display:flex;gap:0.75rem;flex-wrap:wrap;}
+    .book-btn-primary{display:inline-flex;align-items:center;gap:0.5rem;background:var(--amber);color:var(--navy);font-family:var(--font-head);font-weight:700;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.75rem 1.25rem;border-radius:4px;text-decoration:none;transition:background 0.2s;}
+    .book-btn-primary:hover{background:#e09e58;}
+    .book-btn-secondary{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.3);color:var(--white);font-family:var(--font-head);font-weight:600;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.75rem 1.25rem;border-radius:4px;text-decoration:none;transition:background 0.2s;}
+    .book-btn-secondary:hover{background:rgba(255,255,255,0.2);}
+
+    /* MAIN LAYOUT */
+    .main-wrapper{max-width:var(--max-width);margin:0 auto;padding:3rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start;}
+    section{margin-bottom:2.75rem;}
+    .section-label{font-family:var(--font-head);font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--slate);margin-bottom:0.35rem;display:flex;align-items:center;gap:0.4rem;}
+    .section-label::after{content:'';display:inline-block;width:24px;height:1px;background:var(--slate);opacity:0.5;}
+    .section-title{font-family:var(--font-head);font-size:1.75rem;font-weight:600;color:var(--navy);margin-bottom:0.85rem;letter-spacing:0.02em;text-transform:uppercase;border-bottom:2px solid var(--amber);padding-bottom:0.5rem;display:inline-block;}
+    p{margin-bottom:1rem;color:#3a4f54;font-size:0.95rem;}
+
+    /* FEATURED RENTAL (large) */
+    .feature-rental{background:var(--white);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:1rem;box-shadow:0 1px 4px rgba(50,61,65,0.07);}
+    .feature-rental + .feature-rental{margin-top:1.5rem;}
+    .feature-img{width:100%;height:300px;object-fit:cover;display:block;background:var(--slate);}
+    .feature-body{padding:1.4rem 1.5rem 1.5rem;}
+    .feature-eyebrow{font-family:var(--font-head);font-size:0.64rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--slate);margin-bottom:0.3rem;}
+    .feature-name{font-family:var(--font-head);font-size:1.4rem;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:0.02em;margin-bottom:0.5rem;}
+    .feature-specs{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.85rem;}
+    .spec-chip{display:inline-flex;align-items:center;gap:0.4rem;background:var(--cream);border:1px solid var(--border);border-radius:20px;padding:0.3rem 0.7rem;font-size:0.78rem;color:#3a4f54;font-weight:500;}
+    .spec-chip .ses-icon{width:18px;height:18px;} .spec-chip .ses-icon svg{width:10px;height:10px;}
+    .feature-desc{font-size:0.9rem;color:#3a4f54;margin-bottom:1rem;}
+    .feature-btns{display:flex;gap:0.6rem;flex-wrap:wrap;}
+    .fbtn{display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--font-head);font-weight:700;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.65rem 1.1rem;border-radius:4px;text-decoration:none;transition:background 0.2s;}
+    .fbtn-primary{background:var(--amber);color:var(--navy);} .fbtn-primary:hover{background:#e09e58;}
+    .fbtn-ghost{background:transparent;border:1px solid var(--border);color:var(--slate);} .fbtn-ghost:hover{background:var(--cream);}
+
+    /* ON PROPERTY HIGHLIGHTS */
+    .highlight-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin-top:1rem;}
+    .highlight-card{background:var(--navy);border-radius:8px;padding:1.4rem 1.4rem 1.5rem;color:var(--white);position:relative;overflow:hidden;}
+    .highlight-card .hl-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--amber);border-radius:50%;margin-bottom:0.8rem;}
+    .highlight-card .hl-icon svg{width:23px;height:23px;}
+    .highlight-card h4{font-family:var(--font-head);font-size:1.02rem;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;color:var(--white);margin-bottom:0.4rem;}
+    .highlight-card p{font-size:0.85rem;color:rgba(255,255,255,0.72);margin:0;line-height:1.55;}
+
+    /* WHY STAY CARDS */
+    .why-stay{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:0.85rem;margin-top:0.85rem;}
+    .why-card{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--amber);padding:1rem 1.1rem;border-radius:4px;text-align:center;}
+    .why-card .icon-wrap{display:flex;justify-content:center;margin-bottom:0.5rem;}
+    .why-card h4{font-family:var(--font-head);font-size:0.82rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--navy);margin-bottom:0.2rem;}
+    .why-card p{font-size:0.78rem;color:var(--muted);margin:0;line-height:1.5;}
+
+    /* AMENITIES */
+    .amenity-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:0.6rem;margin-top:0.75rem;}
+    .amenity-item{display:flex;align-items:center;gap:0.6rem;background:var(--white);border:1px solid var(--border);padding:0.55rem 0.85rem;border-radius:3px;font-size:0.83rem;color:#3a4f54;}
+    .amenity-item .ses-icon{width:22px;height:22px;flex-shrink:0;} .amenity-item .ses-icon svg{width:12px;height:12px;}
+
+    /* STORY */
+    .story-section{background:var(--navy);border-radius:8px;padding:2rem 2.25rem;margin-bottom:2.75rem;position:relative;overflow:hidden;}
+    .story-section::before{content:'\201C';position:absolute;top:0.5rem;right:1.5rem;font-size:7rem;color:rgba(238,175,112,0.1);line-height:1;font-family:Georgia,serif;pointer-events:none;}
+    .story-label{font-family:var(--font-head);font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--amber);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.6rem;}
+    .story-title{font-family:var(--font-head);font-size:1.4rem;font-weight:600;color:var(--white);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:1.1rem;}
+    .story-body{font-size:0.97rem;font-style:italic;font-weight:300;line-height:1.85;border-left:3px solid var(--amber);padding-left:1.25rem;}
+    .story-body p{color:rgba(255,255,255,0.82);margin-bottom:0.85rem;} .story-body p:last-child{margin-bottom:0;}
+    .story-attribution{margin-top:1.1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.82rem;color:var(--amber);font-weight:500;font-style:normal;display:flex;align-items:center;gap:0.6rem;}
+
+    /* TIPS */
+    .tips-list{list-style:none;margin-top:0.75rem;}
+    .tips-list li{display:flex;gap:0.75rem;margin-bottom:0.7rem;font-size:0.92rem;color:#3a4f54;align-items:flex-start;}
+
+    /* SIDEBAR */
+    .sidebar{position:sticky;top:2rem;}
+    .sidebar-card{background:var(--white);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:1.5rem;box-shadow:0 1px 4px rgba(50,61,65,0.07);}
+    .sidebar-card-header{background:var(--navy);color:var(--white);padding:0.75rem 1.15rem;font-family:var(--font-head);font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;display:flex;align-items:center;gap:0.6rem;}
+    .sidebar-card-body{padding:1.15rem;}
+    .info-row{display:flex;gap:0.65rem;margin-bottom:0.9rem;font-size:0.88rem;align-items:flex-start;} .info-row:last-child{margin-bottom:0;}
+    .info-row .label{font-family:var(--font-head);font-weight:600;display:block;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.15rem;}
+    .info-row a{color:var(--slate);text-decoration:none;font-weight:500;}
+    .divider{border:none;border-top:1px solid var(--border);margin:1rem 0;}
+    .hours-sub-head{font-family:var(--font-head);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin:0.85rem 0 0.4rem;display:block;}
+    .hours-table{width:100%;font-size:0.83rem;border-collapse:collapse;}
+    .hours-table tr td{padding:0.3rem 0;} .hours-table tr td:first-child{color:var(--muted);}
+    .hours-table tr td:last-child{text-align:right;font-weight:600;color:var(--navy);}
+    .book-block{display:flex;flex-direction:column;gap:0.5rem;margin-top:1rem;}
+    .book-block a{display:flex;align-items:center;justify-content:center;gap:0.6rem;font-family:var(--font-head);font-weight:700;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.8rem 1rem;border-radius:4px;text-decoration:none;transition:background 0.2s;}
+    .book-block .btn-direct{background:var(--amber);color:var(--navy);}
+    .book-block .btn-direct:hover{background:#e09e58;}
+    .book-block .btn-call{background:var(--slate);color:var(--white);}
+    .book-block .btn-call:hover{background:#3f5a63;}
+    .social-links{display:flex;gap:0.5rem;margin-top:0.75rem;}
+    .social-links a{flex:1;text-align:center;background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:0.5rem;font-family:var(--font-head);font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:var(--navy);text-decoration:none;display:flex;align-items:center;justify-content:center;gap:0.4rem;}
+    .social-links a:hover{background:var(--border);}
+    .map-wrap iframe{width:100%;height:185px;border:none;display:block;}
+    .map-note{padding:0.7rem 1.15rem;font-size:0.8rem;color:var(--muted);display:flex;align-items:center;gap:0.5rem;}
+    .nearby-item{display:flex;gap:0.75rem;margin-bottom:0.8rem;align-items:flex-start;} .nearby-item:last-child{margin-bottom:0;}
+    .nearby-item strong{display:block;font-size:0.88rem;color:var(--navy);font-weight:600;} .nearby-item span{font-size:0.78rem;color:var(--muted);}
+
+    /* KEEP EXPLORING */
+    .keep-exploring{background:var(--cream);padding:3rem 2rem;border-top:3px solid var(--amber);}
+    .keep-exploring-inner{max-width:var(--max-width);margin:0 auto;}
+    .keep-exploring-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem;margin-top:1.5rem;}
+    .ke-card{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--amber);border-radius:6px;text-decoration:none;display:block;overflow:hidden;transition:box-shadow 0.2s;}
+    .ke-card:hover{box-shadow:0 4px 16px rgba(50,61,65,0.12);}
+    .ke-card-dark{background:var(--navy);border-color:var(--navy);}
+    .ke-card-body{padding:1.25rem 1.5rem 1.5rem;}
+    .ke-icon{font-size:1.75rem;margin-bottom:0.75rem;display:block;}
+    .ke-label{font-family:var(--font-head);font-size:0.65rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--slate);margin-bottom:0.4rem;}
+    .ke-card-dark .ke-label{color:var(--amber);}
+    .ke-title{font-family:var(--font-head);font-size:1.05rem;font-weight:600;color:var(--navy);text-transform:uppercase;margin-bottom:0.5rem;}
+    .ke-card-dark .ke-title{color:var(--white);}
+    .ke-desc{font-size:0.83rem;color:var(--muted);line-height:1.6;margin:0;}
+    .ke-card-dark .ke-desc{color:rgba(255,255,255,0.65);}
+    .ke-arrow{margin-top:1rem;font-family:var(--font-head);font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);}
+    .page-footer{background:#212b2e;color:rgba(255,255,255,0.45);text-align:center;font-size:0.78rem;padding:1.5rem 1rem;}
+    .page-footer strong{color:rgba(255,255,255,0.8);} .page-footer a{color:var(--amber);text-decoration:none;}
+
+    @media(max-width:768px){
+      .main-wrapper{grid-template-columns:1fr;} .sidebar{position:static;}
+      .quick-bar-inner{flex-direction:column;padding:0.75rem 2rem;}
+      .quick-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.08);padding:0.6rem 0;margin:0;}
+      .quick-item:last-child{border-bottom:none;}
+      .book-banner-inner{flex-direction:column;align-items:flex-start;}
+      .why-stay{grid-template-columns:repeat(2,1fr);}
+    }
+  </style>
+
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="icon-beer" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><path d="M15 10h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2"/><path d="M6 8c0-2 1-3 3-3s2-1 4-1 2 3 0 4"/><line x1="8" y1="12" x2="8" y2="18"/><line x1="12" y1="12" x2="12" y2="18"/></symbol>
+    <symbol id="icon-lodge" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-5h6v5"/><line x1="3" y1="21" x2="21" y2="21"/></symbol>
+    <symbol id="icon-farmhouse" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v11h14V10"/><path d="M2 21h20"/><path d="M9 21v-6h6v6"/><line x1="12" y1="4" x2="12" y2="9"/></symbol>
+    <symbol id="icon-disc" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6"/><path d="M8 5.5c0 2 1.8 3.5 4 3.5s4-1.5 4-3.5"/><path d="M8 5.5C8 4 9.8 3 12 3s4 1 4 2.5"/><path d="M12 9v3"/><path d="M8 12h8l-1 4H9z"/><path d="M10 16l-1 5M14 16l1 5"/></symbol>
+    <symbol id="icon-paw" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6" cy="10" rx="1.6" ry="2.2"/><ellipse cx="10" cy="7" rx="1.6" ry="2.2"/><ellipse cx="14" cy="7" rx="1.6" ry="2.2"/><ellipse cx="18" cy="10" rx="1.6" ry="2.2"/><path d="M8 15c0-2 2-3 4-3s4 1 4 3 -1.5 4-4 4-4-2-4-4z"/></symbol>
+    <symbol id="icon-coffee" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 9h2a2 2 0 0 1 0 4h-2"/><line x1="8" y1="2" x2="8" y2="5"/><line x1="12" y1="2" x2="12" y2="5"/></symbol>
+    <symbol id="icon-bed" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10"/><path d="M3 14h18"/><path d="M7 10h4"/><line x1="3" y1="18" x2="3" y2="20"/><line x1="21" y1="18" x2="21" y2="20"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="7.05" y2="7.05"/><line x1="16.95" y1="16.95" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="7.05" y2="16.95"/><line x1="16.95" y1="7.05" x2="19.78" y2="4.22"/></symbol>
+    <symbol id="icon-fire" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 6-6 7-6 13a6 6 0 0 0 12 0c0-6-6-7-6-13z"/><path d="M12 12c0 3-2 4-2 6a2 2 0 0 0 4 0c0-2-2-3-2-6z"/></symbol>
+    <symbol id="icon-wifi" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#1e2729"/></symbol>
+    <symbol id="icon-tv" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="18" x2="12" y2="21"/></symbol>
+    <symbol id="icon-ev" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="10" height="18" rx="1.5"/><path d="M15 7h2a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V10"/><path d="M11 8l-3 4h3l-1 4"/></symbol>
+    <symbol id="icon-park" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="18" width="20" height="3" rx="1"/><path d="M8 18V9l4-6 4 6v9"/><path d="M5 18v-5l3-4"/><path d="M19 18v-5l-3-4"/></symbol>
+    <symbol id="icon-deck" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M5 20v-6h14v6"/><path d="M5 14l2-4h10l2 4"/><path d="M9 20v-6M15 20v-6"/></symbol>
+    <symbol id="icon-snow" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></symbol>
+    <symbol id="icon-winery" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l-1.5 7a4 4 0 0 1-5 0L8 3z"/><line x1="12" y1="14" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></symbol>
+    <symbol id="icon-restaurant" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="3" x2="8" y2="21"/><path d="M6 3v6a3 3 0 0 0 4 0V3"/><line x1="16" y1="3" x2="16" y2="21"/></symbol>
+    <symbol id="icon-hike" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M10 7l-3 5h4l-2 6 5-3"/><path d="M14 16l2 5"/><path d="M9 12l-2 7"/></symbol>
+    <symbol id="icon-flag" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4h14l-2 4 2 4H4"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2H7a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="3,6 9,3 15,6 21,3 21,18 15,21 9,18 3,21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="#1e2729" stroke="none"/></symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88" fill="#1e2729" stroke="none"/></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></symbol>
+    <symbol id="icon-signature" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-2 5-5 7-9s4-6 6-3-2 8-1 10 4-2 6-4"/><line x1="3" y1="21" x2="21" y2="21"/></symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4a2 2 0 0 1 4 0"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="13" y2="14"/></symbol>
+  </defs></svg>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="category-tag"><span class="ses-icon" style="width:22px;height:22px;background:rgba(50,61,65,0.18);"><svg style="width:13px;height:13px;"><use href="#icon-beer"/></svg></span>Lodging &amp; Brewery · South East Seneca</div>
+      <h1>The Lodge at Grist Iron</h1>
+      <p class="hero-tagline">The only Finger Lakes lodging with an onsite microbrewery — nine modern rooms and a 16-guest Farmhouse above Seneca Lake, with craft beer, BBQ, disc golf, and a dog park just steps from your door.</p>
+      <a href="https://secure.thinkreservations.com/gristironbrewing/reservations" target="_blank" rel="noopener" class="hero-book-btn">
+        <span class="ses-icon" style="width:22px;height:22px;background:rgba(50,61,65,0.18);"><svg style="width:12px;height:12px;"><use href="#icon-lodge"/></svg></span>
+        Book a Room
+      </a>
+    </div>
+  </div>
+
+  <!-- QUICK BAR -->
+  <div class="quick-bar"><div class="quick-bar-inner">
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-pin"/></svg></span>Burdett, NY</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-lodge"/></svg></span><strong>9</strong>&nbsp;Rooms + Farmhouse (16)</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-beer"/></svg></span>Onsite Microbrewery &amp; Pub</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-disc"/></svg></span>18-Hole Disc Golf</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-paw"/></svg></span>Dog Park &amp; Dog-Friendly Rooms</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-sun"/></svg></span>Seneca Lake Views</div>
+  </div></div>
+
+  <!-- BOOKING BANNER -->
+  <div class="book-banner">
+    <div class="book-banner-inner">
+      <div class="book-banner-text">
+        <strong>Good Times Always On Tap</strong>
+        <span>Book online, or call the Lodge at (607) 546-4066 — weekends sell out early</span>
+      </div>
+      <div class="book-banner-btns">
+        <a href="https://secure.thinkreservations.com/gristironbrewing/reservations" target="_blank" rel="noopener" class="book-btn-primary">
+          <span class="ses-icon" style="width:20px;height:20px;background:rgba(50,61,65,0.15);"><svg style="width:11px;height:11px;"><use href="#icon-lodge"/></svg></span>
+          Book a Room
+        </a>
+        <a href="tel:+16075464066" class="book-btn-secondary">
+          Call the Lodge
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN + SIDEBAR -->
+  <div class="main-wrapper">
+    <main>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <p class="section-label">About</p>
+        <h2 class="section-title">The Lodge at Grist Iron</h2>
+        <p>The Lodge at Grist Iron Brewing Co. sits 6 miles north of Watkins Glen on a scenic 150-acre property overlooking Seneca Lake — centrally located on the Beer, Wine, and Cheese Trails and the perfect home base for a Finger Lakes adventure. It's the only lodging in the region with an onsite microbrewery, so house-brewed craft beer, wood-fired pizza, and smoked BBQ are just steps from your room.</p>
+        <p>Choose from nine recently renovated, simple-modern rooms — including select dog-friendly rooms — or bring the whole crew to the historic Farmhouse, which sleeps up to 16. Every stay includes a complimentary continental breakfast in a bright, airy common area with killer views of the lake, plus check-in beers to get things started. With 30+ wineries, breweries, distilleries, and restaurants within 10 miles, good times are always on tap.</p>
+      </section>
+
+      <!-- ON PROPERTY -->
+      <section id="on-property">
+        <p class="section-label">Only Here</p>
+        <h2 class="section-title">Right Outside Your Door</h2>
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <span class="hl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#323d41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-beer"/></svg></span>
+            <h4>Onsite Microbrewery</h4>
+            <p>Up to 15 house-brewed beers on tap, wood-fired pizza, and smoked meats — the only lodging in the Finger Lakes with its own brewery next door.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#323d41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-disc"/></svg></span>
+            <h4>18-Hole Disc Golf</h4>
+            <p>A scenic 18-hole course winding through the brewery's 150-acre property — grab a disc and play right from the Lodge.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#323d41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-paw"/></svg></span>
+            <h4>Dog Park &amp; Bar</h4>
+            <p>An almost 6-acre fenced, off-leash dog park — complete with its own onsite bar. Dog-friendly rooms available, too.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED STAYS -->
+      <section id="stays">
+        <p class="section-label">Featured Stays</p>
+        <h2 class="section-title">Where You'll Stay</h2>
+        <p>Two ways to make the Lodge your home base — hotel-style rooms for couples and small groups, or the whole Farmhouse for the crew.</p>
+
+        <!-- The Lodge -->
+        <div class="feature-rental">
+          <img class="feature-img" src="https://images.squarespace-cdn.com/content/v1/63e01105bbabc6724dccfee7/91a585f5-598d-4423-a85d-a2b7938a1b2b/lodgeroom9doublebed.jpg?format=1000w" alt="A modern room at The Lodge at Grist Iron with two beds and a wooden headboard" loading="lazy" />
+          <div class="feature-body">
+            <div class="feature-eyebrow">Hotel-Style Rooms · Lake-View Common Area</div>
+            <div class="feature-name">The Lodge Rooms</div>
+            <div class="feature-specs">
+              <span class="spec-chip"><span class="ses-icon"><svg><use href="#icon-lodge"/></svg></span>9 Modern Rooms</span>
+              <span class="spec-chip"><span class="ses-icon"><svg><use href="#icon-paw"/></svg></span>Dog-friendly options</span>
+              <span class="spec-chip"><span class="ses-icon"><svg><use href="#icon-coffee"/></svg></span>Breakfast included</span>
+              <span class="spec-chip"><span class="ses-icon"><svg><use href="#icon-beer"/></svg></span>Check-in beers</span>
+            </div>
+            <p class="feature-desc">Nine recently renovated rooms with a clean, simple-modern design and updated amenities. Upper-floor rooms open onto private balconies with lake views. Every morning brings a complimentary continental breakfast in the bright common area overlooking Seneca Lake, with a 24/7 coffee and tea station whenever you need it. Select rooms are dog-friendly.</p>
+            <div class="feature-btns">
+              <a href="https://secure.thinkreservations.com/gristironbrewing/reservations" target="_blank" rel="noopener" class="fbtn fbtn-primary"><span class="ses-icon" style="width:18px;height:18px;background:rgba(50,61,65,0.15);"><svg style="width:10px;height:10px;"><use href="#icon-lodge"/></svg></span>Book a Room</a>
+              <a href="https://www.gristironbrewing.com/the-lodge-rooms" target="_blank" rel="noopener" class="fbtn fbtn-ghost">See the Rooms</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Farmhouse -->
+        <div class="feature-rental">
+          <img class="feature-img" src="https://images.squarespace-cdn.com/content/v1/63e01105bbabc6724dccfee7/8bc3f170-d6f9-4917-a417-4e7cb40ccc2b/farmhouse.jpg?format=1000w" alt="The historic Farmhouse at Grist Iron with a wrap-around porch" loading="lazy" />
+          <div class="feature-body">
+            <div class="feature-eyebrow">Whole-House Rental · Sleeps 16</div>
+            <div class="feature-name">The Farmhouse</div>
+            <div class="feature-specs">
+              <span class="spec-chip"><span class="ses-icon"><svg><use href="#icon-farmhouse"/></svg></span>Sleeps up to 16</span>
+              <span class="spec-chip"><span class="ses-icon"><svg><use href="#icon-deck"/></svg></span>Expansive deck</span>
+              <span class="spec-chip"><span class="ses-icon"><svg><use href="#icon-star"/></svg></span>Two stories, private</span>
+            </div>
+            <p class="feature-desc">A historic two-story private Farmhouse filled with warmth and charm — wide plank wood floors, original hand-hewn beams, and various shades of chestnut, pine, and oak. An expansive deck overlooks Seneca Lake, and the whole house is yours, making it ideal for family reunions, wine weekends, and larger groups of up to 16.</p>
+            <div class="feature-btns">
+              <a href="https://secure.thinkreservations.com/gristironbrewing/reservations" target="_blank" rel="noopener" class="fbtn fbtn-primary"><span class="ses-icon" style="width:18px;height:18px;background:rgba(50,61,65,0.15);"><svg style="width:10px;height:10px;"><use href="#icon-farmhouse"/></svg></span>Book the Farmhouse</a>
+              <a href="https://www.gristironbrewing.com/the-farmhouse" target="_blank" rel="noopener" class="fbtn fbtn-ghost">Farmhouse Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY STAY -->
+      <section id="why-stay">
+        <p class="section-label">Why Stay Here</p>
+        <h2 class="section-title">What Makes It Special</h2>
+        <div class="why-stay">
+          <div class="why-card"><div class="icon-wrap"><span class="ses-icon ses-icon-md"><svg><use href="#icon-beer"/></svg></span></div><h4>Beer Steps Away</h4><p>The region's only lodging with its own brewery, pub, and BBQ next door.</p></div>
+          <div class="why-card"><div class="icon-wrap"><span class="ses-icon ses-icon-md"><svg><use href="#icon-sun"/></svg></span></div><h4>Seneca Lake Views</h4><p>Killer lake views from the common area and upper-floor balconies.</p></div>
+          <div class="why-card"><div class="icon-wrap"><span class="ses-icon ses-icon-md"><svg><use href="#icon-coffee"/></svg></span></div><h4>Breakfast Included</h4><p>Complimentary continental breakfast plus a 24/7 coffee &amp; tea station.</p></div>
+          <div class="why-card"><div class="icon-wrap"><span class="ses-icon ses-icon-md"><svg><use href="#icon-paw"/></svg></span></div><h4>Bring the Dog</h4><p>Dog-friendly rooms and a 6-acre off-leash dog park with its own bar.</p></div>
+          <div class="why-card"><div class="icon-wrap"><span class="ses-icon ses-icon-md"><svg><use href="#icon-disc"/></svg></span></div><h4>Disc Golf</h4><p>An 18-hole course across 150 scenic acres, right on property.</p></div>
+          <div class="why-card"><div class="icon-wrap"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span></div><h4>Central Location</h4><p>30+ wineries, breweries &amp; restaurants within 10 miles of your room.</p></div>
+          <div class="why-card"><div class="icon-wrap"><span class="ses-icon ses-icon-md"><svg><use href="#icon-ev"/></svg></span></div><h4>EV Charging</h4><p>Onsite parking with an electric-vehicle charging station.</p></div>
+          <div class="why-card"><div class="icon-wrap"><span class="ses-icon ses-icon-md"><svg><use href="#icon-star"/></svg></span></div><h4>Travelers' Choice</h4><p>A Tripadvisor Travelers' Choice winner, praised for clean, comfortable rooms.</p></div>
+        </div>
+      </section>
+
+      <!-- AMENITIES -->
+      <section id="amenities">
+        <p class="section-label">Amenities</p>
+        <h2 class="section-title">What's Included</h2>
+        <div class="amenity-grid">
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-coffee"/></svg></span>Daily continental breakfast</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-beer"/></svg></span>Complimentary check-in beers</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-beer"/></svg></span>Onsite craft brewery &amp; pub</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-ev"/></svg></span>Parking w/ EV charging</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-hike"/></svg></span>Walking trail on property</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-fire"/></svg></span>Outdoor fire pit</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-coffee"/></svg></span>24/7 coffee &amp; tea station</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-paw"/></svg></span>Dog-friendly rooms &amp; dog park</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-disc"/></svg></span>18-hole disc golf course</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-snow"/></svg></span>Microwave &amp; ice machine</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-tv"/></svg></span>Updated in-room amenities</div>
+          <div class="amenity-item"><span class="ses-icon"><svg><use href="#icon-star"/></svg></span>Non-smoking facility</div>
+        </div>
+      </section>
+
+      <!-- STORY -->
+      <div class="story-section">
+        <p class="story-label"><span class="ses-icon" style="width:24px;height:24px;background:rgba(238,175,112,0.2);"><svg style="width:13px;height:13px;"><use href="#icon-pen" style="stroke:var(--amber)"/></svg></span>What Guests Say</p>
+        <h3 class="story-title">The Perfect Home Base</h3>
+        <div class="story-body">
+          <p>Guests call it the perfect spot for a getaway — pleasant, helpful staff and rooms that are comfortable, updated, and spotless. Many mention the upper-floor balconies with amazing lake views, the breakfast area open around the clock, and how easy it is to reach everything they wanted to see in a short drive.</p>
+          <p>Dog owners especially love it: one family on a four-day stay was handed a guide to dog-friendly dining, activities, and hiking trails — true Finger Lakes hospitality, with great beer waiting right next door.</p>
+        </div>
+        <p class="story-attribution"><span class="ses-icon" style="width:22px;height:22px;background:rgba(238,175,112,0.15);"><svg style="width:12px;height:12px;"><use href="#icon-signature" style="stroke:var(--amber)"/></svg></span>— Lodge at Grist Iron guests, via Tripadvisor</p>
+      </div>
+
+      <!-- TIPS -->
+      <section id="tips">
+        <p class="section-label">Plan Your Stay</p>
+        <h2 class="section-title">Tips for Guests</h2>
+        <ul class="tips-list">
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-lodge"/></svg></span>Book directly through gristironbrewing.com — weekends sell out well in advance, especially in summer and fall.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-farmhouse"/></svg></span>Two ways to stay: the Lodge is hotel-style with private rooms; the Farmhouse is a whole private house for groups up to 16.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-sun"/></svg></span>Ask for an upper-floor room if you can — those balconies have the best Seneca Lake views and morning light.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-paw"/></svg></span>Traveling with a dog? Request a dog-friendly room, and let them run at the fenced 6-acre dog park (yes, it has its own bar).</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-beer"/></svg></span>Use your complimentary check-in beers on the brewery patio, then grab a wood-fired pizza before heading back to your room.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-hike"/></svg></span>Watkins Glen State Park is about 6 miles south — pair a morning gorge hike with an afternoon on the disc golf course.</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-clipboard"/></svg></span>Book Your Stay</div>
+        <div class="sidebar-card-body">
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-pin"/></svg></span><div><span class="label">Address</span>4880 NY-414<br/>Burdett, NY 14818</div></div>
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-phone"/></svg></span><div><span class="label">Lodge &amp; Farmhouse</span><a href="tel:+16075464066">(607) 546-4066</a></div></div>
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-beer"/></svg></span><div><span class="label">Brewery</span><a href="tel:+16078822739">(607) 882-2739</a></div></div>
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-mail"/></svg></span><div><span class="label">Email</span><a href="mailto:info@gristironbrewing.com">info@gristironbrewing.com</a></div></div>
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-globe"/></svg></span><div><span class="label">Website</span><a href="https://www.gristironbrewing.com/the-lodge-at-grist-iron" target="_blank" rel="noopener">gristironbrewing.com</a></div></div>
+          <hr class="divider"/>
+          <span class="hours-sub-head">Good to Know</span>
+          <table class="hours-table">
+            <tr><td>Rooms</td><td>9 + Farmhouse</td></tr>
+            <tr><td>Farmhouse sleeps</td><td>Up to 16</td></tr>
+            <tr><td>Breakfast</td><td>Included daily</td></tr>
+            <tr><td>Dogs</td><td>Select rooms</td></tr>
+          </table>
+          <div class="book-block">
+            <a href="https://secure.thinkreservations.com/gristironbrewing/reservations" target="_blank" rel="noopener" class="btn-direct">
+              <span class="ses-icon" style="width:20px;height:20px;background:rgba(50,61,65,0.15);"><svg style="width:11px;height:11px;"><use href="#icon-lodge"/></svg></span>
+              Book a Room
+            </a>
+            <a href="tel:+16075464066" class="btn-call">
+              Call (607) 546-4066
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/GristIronBrewing/" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-facebook"/></svg></span>Facebook</a>
+            <a href="https://www.instagram.com/gristironbrewingco/" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-instagram"/></svg></span>Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-pin"/></svg></span>Location</div>
+        <div class="map-wrap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960!2d-76.865!3d42.445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s4880+NY-414%2C+Burdett%2C+NY+14818!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="The Lodge at Grist Iron map"></iframe></div>
+        <div class="map-note"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-map"/></svg></span>4880 NY-414 · Burdett, NY · 6 mi north of Watkins Glen</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-compass"/></svg></span>Nearby Highlights</div>
+        <div class="sidebar-card-body">
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-beer"/></svg></span><div><strong>Grist Iron Brewing Taproom</strong><span>Up to 15 beers on tap, wood-fired pizza — right next door</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-hike"/></svg></span><div><strong>Watkins Glen State Park</strong><span>~6 mi south · Famous gorge trail and 19 waterfalls</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><div><strong>Seneca Lake Wine Trail</strong><span>Dozens of wineries on both shores, minutes away</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-flag"/></svg></span><div><strong>Watkins Glen International</strong><span>Historic road-racing circuit, a short drive south</span></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- KEEP EXPLORING -->
+  <div class="keep-exploring">
+    <div class="keep-exploring-inner">
+      <p class="section-label">While You're Here</p>
+      <h2 class="section-title">Explore South East Seneca</h2>
+      <p style="color:#3a4f54;font-size:0.95rem;margin:0.5rem 0 0;">Everything you need for an exceptional Finger Lakes stay — minutes from The Lodge at Grist Iron.</p>
+      <div class="keep-exploring-grid">
+        <a href="https://southeastseneca.github.io/Stonecat-cafe/" target="_top" class="ke-card"><div class="ke-card-body"><div class="ke-label">Restaurant · Hector, NY</div><div class="ke-title">Stonecat Cafe</div><p class="ke-desc">Farm-to-table organic cuisine since 1999 — pub nights, live music, and sunset views over Seneca Lake.</p><div class="ke-arrow">Explore →</div></div></a>
+        <a href="https://southeastseneca.github.io/Lucky-Hare-Listing/" target="_top" class="ke-card"><div class="ke-card-body"><div class="ke-label">Brewery · Hector, NY</div><div class="ke-title">Lucky Hare Brewing</div><p class="ke-desc">Craft beer taproom with lake views, Babe's Burgers on-site, and weekly live music all summer long.</p><div class="ke-arrow">Explore →</div></div></a>
+        <a href="https://southeastseneca.github.io/Red-Newt-Cellars/" target="_top" class="ke-card"><div class="ke-card-body"><div class="ke-label">Winery · Hector, NY</div><div class="ke-title">Red Newt Cellars</div><p class="ke-desc">Preeminent Finger Lakes Riesling since 1998, with a farm-to-table bistro and single-vineyard lineup.</p><div class="ke-arrow">Explore →</div></div></a>
+        <a href="https://southeastseneca.com" target="_top" class="ke-card ke-card-dark"><div class="ke-card-body" style="padding-top:1.75rem;"><span class="ke-icon">🗺️</span><div class="ke-label">Full Directory</div><div class="ke-title">South East Seneca</div><p class="ke-desc">Wineries, breweries, distilleries, restaurants, and experiences across the east shore of Seneca Lake.</p><div class="ke-arrow">Visit southeastseneca.com →</div></div></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <p><strong>The Lodge at Grist Iron Brewing Co.</strong> &nbsp;·&nbsp; 4880 NY-414, Burdett, NY 14818 &nbsp;·&nbsp; <a href="tel:+16075464066">(607) 546-4066</a> &nbsp;·&nbsp; Part of <a href="https://southeastseneca.com">South East Seneca</a></p>
+    <p style="margin-top:0.4rem;">© 2026 South East Seneca Lake Tourism. All rights reserved.</p>
+  </footer>
+  <script>function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({iframeHeight:h},"*");}window.addEventListener("load",sendHeight);window.addEventListener("resize",sendHeight);setTimeout(sendHeight,500);setTimeout(sendHeight,1500);setTimeout(sendHeight,3000);</script>
+</body>
+</html>
